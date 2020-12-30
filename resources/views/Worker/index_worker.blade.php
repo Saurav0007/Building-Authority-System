@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="construction is awesome bootstrap responsive construction business theme">
     <meta name="keywords" content="construction, business, construction business, responsive, parallax, business theme">
-    <title>Construction</title>
+    <title>Worker Home</title>
 
     <!-- Bootstrap -->
     <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -70,20 +70,20 @@
                                     <li class="menu-item current-menu-item"><a href="worker">Home</a></li>
                                     <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="Presence">Presence</a>
                                         <ul class="sub-menu">
-                                                    <li class="menu-item"><a href="Presence">Check In</a></li>
-                                                    <li class="menu-item"><a href="Presence">Check Out</a></li>
+                                                    <li class="menu-item"><a href="WorkerPresence">Check In</a></li>
+                                                    <li class="menu-item"><a href="WorkerPresence">Check Out</a></li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Select Destination</a>
                                                 <ul class="sub-menu">
-                                                    <li class="menu-item"><a href="shop">Shop</a></li>
-                                                    <li class="menu-item"><a href="office">Office</a></li>
+                                                    <li class="menu-item"><a href="Workershop">Shop</a></li>
+                                                    <li class="menu-item"><a href="Workeroffice">Office</a></li>
                                                 </ul>
                                             </li>
                                     <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Complain</a>
                                         <ul class="sub-menu">
-                                            <li class="menu-item"><a href="Report">Report</a></li>
-                                            <li class="menu-item"><a href="Feedback">Feedback</a></li>
+                                            <li class="menu-item"><a href="WorkerReport">Report</a></li>
+                                            <li class="menu-item"><a href="WorkerFeedback">Feedback</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item"><a href="#">Log out</a></li>

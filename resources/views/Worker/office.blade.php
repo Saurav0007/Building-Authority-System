@@ -70,20 +70,20 @@
                                     <li class="menu-item current-menu-item"><a href="worker">Home</a></li>
                                     <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="Presence">Presence</a>
                                         <ul class="sub-menu">
-                                            <li class="menu-item"><a href="Presence">Check In</a></li>
-                                            <li class="menu-item"><a href="Presence">Check Out</a></li>
+                                            <li class="menu-item"><a href="WorkerPresence">Check In</a></li>
+                                            <li class="menu-item"><a href="WorkerPresence">Check Out</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Select Destination</a>
                                         <ul class="sub-menu">
-                                            <li class="menu-item"><a href="shop">Shop</a></li>
-                                            <li class="menu-item"><a href="office">Office</a></li>
+                                            <li class="menu-item"><a href="Workershop">Shop</a></li>
+                                            <li class="menu-item"><a href="Workeroffice">Office</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Complain</a>
                                         <ul class="sub-menu">
-                                            <li class="menu-item"><a href="Report">Report</a></li>
-                                            <li class="menu-item"><a href="Feedback">Feedback</a></li>
+                                            <li class="menu-item"><a href="WorkerReport">Report</a></li>
+                                            <li class="menu-item"><a href="WorkerFeedback">Feedback</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item"><a href="#">Log out</a></li>
@@ -105,11 +105,19 @@
                     <h1 class="caption-title">Select Office</h1>
                     <h2 class="caption-subtitle">Select your office where you work.</h2>
                     <p>Make sure you select right one. Don't make any mistake</p>
+                        <h2 class="header">Shops in the buildings</h2>
+                                @foreach($WorkerOffice as $Woff)
+                                    <div class="container-fluid">
+                                        <p style="color: #0000cc;">{{$Woff['ShopName']}}</p>
+                                        <p style="color: #0000cc;">{{$Woff['ShopDetails']}}</p>
+                                        <p style="color: #0000cc;">{{$Woff['ShopNo']}}</p>
+                                        <p style="color: #0000cc;"><img src="Uploads/SOpicture/{{$Woff['ShopPhoto']}}" width="300" height="300" alt="No Image Given"></p>
+                                        <a href="/selectOffice" style="color: #0000cc;" class="btn btn-default">Select for Destination</a>
+                                    </div>
+                                @endforeach
                 </div><!-- .header-caption -->
                 </div><!-- .col-sm-5 -->
-{{--                <div class="form-group col-md-12">--}}
-{{--                    <input type="email" name="email" class="form-control" required="required" placeholder="Email">--}}
-{{--                </div>--}}
+
             </div>
         </div><!-- .row -->
     </div><!-- .container -->

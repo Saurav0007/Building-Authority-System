@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <meta name="description" content="construction is awesome bootstrap responsive construction business theme">
     <meta name="keywords" content="construction, business, construction business, responsive, parallax, business theme">
     <meta name="author" content="templateninja">
-    <title>Construction</title>
+    <title>Employee</title>
 
     <!-- Bootstrap -->
     <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -69,38 +69,34 @@
 
                   <div class="menu-testing-menu-container">
                     <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
-                      <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+                      <li class="menu-item current-menu-item"><a href="Employee">Home</a></li>
                       <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Create Account</a>
                         <ul class="sub-menu">
-                          <li class="menu-item menu-item-has-children"><a href="#">Worker</a>
+                          <li class="menu-item menu-item-has-children"><a href="worker_details">Worker</a>
                           <ul class="sub-menu">
-                            <li class="menu-item"><a href="service-item.html">Registration</a></li>
+                            <li class="menu-item"><a href="worker_regi">Registration</a></li>
                           </ul>
                           </li>
-                          <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Public</a>
+                          <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="public_details">Public</a>
                           <ul class="sub-menu">
-                            <li class="menu-item"><a href="service-item.html">Registration</a></li>
+                            <li class="menu-item"><a href="public_regi">Registration</a></li>
                           </ul>
                           </li>
                         </ul>
                       </li>
-                      <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Permissions</a>
+                      <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="permission_details">Permissions</a>
                         <ul class="sub-menu">
-                          <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="single.html">Public Details</a>
-                            <ul class="sub-menu">
-                              <li class="menu-item"><a href="alert.html">Valid Details</a></li>
-                              <li class="menu-item"><a href="progress.html">Invalid Details</a></li>
-                            </ul>
+                          <li class="sub-menu" aria-haspopup="true"><a href="permission_list">Permission Details</a>
                           </li>
                         </ul>
                       </li>
-                      <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="project.html">Room Details</a>
+                      <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="EmployeeRoomDetails">Room Details</a>
                         <ul class="sub-menu">
-                          <li class="menu-item" aria-haspopup="true"><a href="alert.html">Empty Rooms</a></li>
+                          <li class="menu-item" aria-haspopup="true"><a href="EmptyRoomDetails">Empty Rooms</a></li>
                         </ul>
                       </li>
-                      <li class="menu-item"><a href="blog.html">Shop/Office Details</a></li>
-                      <li class="menu-item"><a href="about.html">Log out</a></li>
+                      <li class="menu-item"><a href="shop_office">Shop/Office Details</a></li>
+                      <li class="menu-item"><a href="#">Log out</a></li>
                     </ul>
 
                   </div>
@@ -148,7 +144,7 @@
 
       </div>
     </div>
-    
+
 
     <!-- begin:additional-info -->
     <div id="additional-info" class="additional-info block-section bg-grey padd-20-top padd-40-btm">

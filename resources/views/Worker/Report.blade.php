@@ -70,20 +70,20 @@
                                     <li class="menu-item current-menu-item"><a href="worker">Home</a></li>
                                     <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="Presence">Presence</a>
                                         <ul class="sub-menu">
-                                            <li class="menu-item"><a href="Presence">Check In</a></li>
-                                            <li class="menu-item"><a href="Presence">Check Out</a></li>
+                                            <li class="menu-item"><a href="WorkerPresence">Check In</a></li>
+                                            <li class="menu-item"><a href="WorkerPresence">Check Out</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Select Destination</a>
                                         <ul class="sub-menu">
-                                            <li class="menu-item"><a href="shop">Shop</a></li>
-                                            <li class="menu-item"><a href="office">Office</a></li>
+                                            <li class="menu-item"><a href="Workershop">Shop</a></li>
+                                            <li class="menu-item"><a href="Workeroffice">Office</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Complain</a>
                                         <ul class="sub-menu">
-                                            <li class="menu-item"><a href="Report">Report</a></li>
-                                            <li class="menu-item"><a href="Feedback">Feedback</a></li>
+                                            <li class="menu-item"><a href="WorkerReport">Report</a></li>
+                                            <li class="menu-item"><a href="WorkerFeedback">Feedback</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item"><a href="#">Log out</a></li>
@@ -104,7 +104,7 @@
                <div class="header-caption">
                    <h2 class="Header-caption" style="color:#bce8f1;">Submit your Report here</h2>  <br>
                     <div class="status alert alert-success" style="display: none"></div>
-               <form action="/SubmitReport" method="post">
+               <form action="/WorkerSubmitReport" method="post">
                    @csrf
                  <div class="form-group col-md-8">
                      <input type="text" name="name" class="form-control" required="required" placeholder="Name">

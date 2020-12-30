@@ -133,7 +133,6 @@
         </div>
     </div>
 </div>
-</div>
 <!-- end:header -->
 
 <!-- begin:additional-info -->
@@ -284,7 +283,7 @@
     <div class="container-fluid container-no-padding">
         <div class="row row-no-margin">
             <div class="image-block-item col-md-6 col-sm-5 col-xs-12">
-                <div class="image-block-item-background" style="background-image: url('assets/img/img-post-content-04.jpg');"></div>
+                <div class="image-block-item-background" style="background-image: url('{{asset("assets/img/img-post-content-04.jpg")}}');"></div>
             </div><!-- .image-block-item -->
         </div><!-- .row -->
     </div><!-- .container-fluid -->

@@ -17,27 +17,56 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home',"employee@employee");
-Route::get('/public',"publicindex@public");
-Route::get('/worker',"worker@worker");
+Route::get('/public',"PublicHomeController@public");
+Route::get('/worker',"WorkerController@worker");
+Route::get('/Employee',"EmployeeController@employee");
+Route::get('/admin',"AdminController@admin");
+
+//Admin
+
+Route::get('/Details',"AdminController@Details");
+Route::get('/Report',"AdminController@Report");
+Route::get('/Account',"AdminController@Account");
+Route::get('/Shop_office',"AdminController@Shop_office");
+Route::get('/RoomDetails',"AdminController@RoomDetails");
+Route::get('/LogOut',"AdminController@LogOut");
+// admin main function
+Route::post('/SubmitAccountAdmin',"AdminController@AccountAdmin");
+Route::post('/SubmitShopOfficeAdmin',"AdminController@ShopOfficeAdmin");
 
 //worker
 
-Route::get('/Feedback',"worker@Feedback");
-Route::get('/office',"worker@office");
-Route::get('/Presence',"worker@presence");
-Route::get('/Report',"worker@Report");
-Route::get('/shop',"worker@shop");
+Route::get('/WorkerFeedback',"WorkerController@Feedback");
+Route::get('/Workeroffice',"WorkerController@office");
+Route::get('/WorkerPresence',"WorkerController@presence");
+Route::get('/WorkerReport',"WorkerController@Report");
+Route::get('/Workershop',"WorkerController@shop");
 // Worker main Function
-Route::post('/SubmitReport',"WokerReportController@WorkerReport");
+Route::post('/WorkerSubmitReport',"WokerReportController@WorkerReport");
 
 // public
-Route::get('PublicPresence',"publicindex@Public_presence");
-Route::get('Publicshop',"publicindex@public_shop");
-Route::get('Publicoffice',"publicindex@public_office");
-Route::get('askpermission',"publicindex@askpermission");
-Route::get('takepermission',"publicindex@takepermission");
-Route::get('PublicReport',"publicindex@public_report");
-Route::get("PublicFeedback","publicindex@public_feedback");
+Route::get('PublicPresence',"PublicHomeController@Public_presence");
+Route::get('Publicshop',"PublicHomeController@public_shop");
+Route::get('Publicoffice',"PublicHomeController@public_office");
+Route::get('askpermission',"PublicHomeController@askpermission");
+Route::get('takepermission',"PublicHomeController@takepermission");
+Route::get('PublicReport',"PublicHomeController@public_report");
+Route::get("PublicFeedback","PublicHomeController@public_feedback");
 // public Main function
 Route::post('SubmitPublicReport',"PublicReportController@PublicReport");
+
+// Employee
+Route::get("/permission_details","EmployeeController@permission_details");
+Route::get("/permission_list","EmployeeController@permission_list");
+Route::get("/public_details","EmployeeController@public_details");
+Route::get("/public_regi","EmployeeController@public_regi");
+Route::get("/EmployeeRoomDetails","EmployeeController@RoomDetails");
+Route::get("/EmptyRoomDetails","EmployeeController@EmptyRoomDetails");
+Route::get("/shop_office","EmployeeController@shop_office");
+Route::get("/worker_regi","EmployeeController@worker_regi");
+Route::get("/worker_details","EmployeeController@worker_details");
+// Employee Function
+Route::post('/WorkerAccountDetails',"EmployeeController@WorkerRegi");
+Route::post('/PublicAccountDetails',"EmployeeController@PublicRegi");
+Route::post('/SubmitRoom','EmployeeController@EmptyRoom');
+

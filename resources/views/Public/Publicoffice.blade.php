@@ -105,17 +105,26 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-5">
-                <div class="header-caption">
-                    <span class="caption-subtitle">Our Service</span>
-                    <h2 class="caption-title">We are your best homes, offices renovations and construction solution.</h2>
-                    <p>We provide overall planning, coordination and control of a project, so you don’t have to worry about anything. Our promise as a contractor is to build community value into every project while delivering professional expertise.</p>
-                    <div class="header-action-button">
-                        <a class="btn btn-warning btn-md" href="#">Purchase</a>
-                        <a class="btn btn-default btn-bordered  btn-md" href="#">Learn more</a>
-                    </div><!-- header-action-button -->
-                </div><!-- .header-caption -->
-            </div><!-- .col-sm-5 -->
+            <div class="col-sm-12">
+                <div class="col-md-5">
+                    <div class="header-caption">
+                        <h1 class="caption-title">Select Office</h1>
+                        <h2 class="caption-subtitle">Select your office where you work.</h2>
+                        <p>Make sure you select right one. Don't make any mistake</p>
+                        <h2 class="header">Shops in the buildings</h2>
+                        @foreach($publicOffice as $Poff)
+                            <div class="container-fluid">
+                                <a href="#"><img src="{{$Poff['ShopPhoto']}}" alt="No Image Found" width="300" height="300"/></a>
+                                <p style="color: #0000cc;">{{$Poff['ShopName']}}</p>
+                                <p style="color: #0000cc;">{{$Poff['ShopDetails']}}</p>
+                                <p style="color: #0000cc;"><img src="Uploads/SOpicture/{{$Poff['ShopPhoto']}}" width="300" height="300" alt="No Image Given"></p>
+                                <a href="/selectOffice" style="color: #0000cc;" class="btn btn-default">Select for Destination</a>
+                            </div>
+                        @endforeach
+                    </div><!-- .header-caption -->
+                </div><!-- .col-sm-5 -->
+
+            </div>
         </div><!-- .row -->
     </div><!-- .container -->
 </div><!-- #header -->

@@ -1,7 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b89f56a-b9e3-4a38-8fba-7e51155ddef4" name="Default Changelist" comment="" />
+    <list default="true" id="9b89f56a-b9e3-4a38-8fba-7e51155ddef4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Employee.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/PublicHome.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Worker.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_19_143256_create_admins_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_19_143422_create_employees_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_19_143540_create_public_homes_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_19_143605_create_workers_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Account.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Details.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Report.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/RoomDetails.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Shop_office.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/navbar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Employee/EmptyRoomDetails.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Employee/RoomDetails.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Employee/permission_details.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Employee/permission_list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Employee/public_details.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Employee/public_regi.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Employee/shop_office.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Employee/worker_details.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Employee/worker_regi.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Building_authority_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Building_authority_system.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/employee.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/publicindex.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PublicHomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/worker.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WorkerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Employee/createaccount.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Employee/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Employee/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Public/PublicReport.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Public/PublicReport.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Public/Publicoffice.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Public/Publicoffice.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Public/Publicshop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Public/Publicshop.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Worker/Feedback.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Worker/Feedback.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Worker/Presence.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Worker/Presence.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Worker/Report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Worker/Report.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Worker/index_worker.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Worker/index_worker.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Worker/office.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Worker/office.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Worker/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Worker/shop.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +68,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration">
@@ -120,18 +174,22 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
       <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lT44XJWYK37FIOzicnF6YS19ds" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../new_gsm_lab/gsm_lab" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -153,10 +211,31 @@
       <workItem from="1607791361410" duration="148000" />
       <workItem from="1607870628108" duration="7730000" />
       <workItem from="1607965635193" duration="21000" />
+      <workItem from="1608387651165" duration="3187000" />
+      <workItem from="1608391731425" duration="1724000" />
+      <workItem from="1608481776601" duration="5626000" />
+      <workItem from="1608558186044" duration="683000" />
+      <workItem from="1608916957006" duration="3567000" />
+      <workItem from="1608988863502" duration="12323000" />
+      <workItem from="1609075646028" duration="3026000" />
+      <workItem from="1609254349596" duration="5590000" />
+      <workItem from="1609339838687" duration="11294000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
