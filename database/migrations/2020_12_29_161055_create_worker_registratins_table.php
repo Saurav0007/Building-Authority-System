@@ -18,6 +18,7 @@ class CreateWorkerRegistratinsTable extends Migration
             $table->string('WorkerName');
             $table->string('WorkerEmail');
             $table->string('WorkerPhone');
+            $table->string('WorkerWPlace');
             $table->string('WorkerAddress');
             $table->string('WorkerPassword');
             $table->timestamps();

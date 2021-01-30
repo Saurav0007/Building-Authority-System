@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Melody Admin</title>
+    <title>BAS Admin Account Details</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/assets/vendors/iconfonts/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="assets/assets/vendors/css/vendor.bundle.base.css">
@@ -71,10 +71,39 @@
     <!-- partial -->
         <div class="main-panel">
             <div class="content-wrapper">
-                <div class="page-header">
-                    <h3 class="page-title">
-                        Watch Public And Worker Account Details
-                    </h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <div class="header-caption">
+                                <h2 class="Header-caption">All user Account Details</h2><div class="status alert alert-success" style="display: none"></div>
+                                <form action="#" class="row"  method="post">
+                                    @csrf
+
+                                    <table class="table table-bordered table-responsive">
+                                        <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Username</th>
+                                            <th>Email</th>
+                                            <th>Password</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        @foreach($allAccountDetails as $aad)
+                                            <tr>
+                                                <td>{{$p=$p+1}}</td>
+                                                <td>{{$aad['name']}}</td>
+                                                <td>{{$aad['email']}}</td>
+                                                <td>{{$aad['password']}}</td>
+                                            </tr>
+                                        @endforeach
+                                        </tbody>
+                                    </table>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- content-wrapper ends -->

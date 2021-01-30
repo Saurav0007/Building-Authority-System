@@ -15,6 +15,6 @@ class WokerReportController extends Controller
         $WorkerReport->WorkerReportType=$request->input('ReportType');
         $WorkerReport->WorkerReportMsg=$request->input('ReportMsg');
         $WorkerReport->save();
-        return redirect('/Report');
+        return redirect('/WorkerReport');
     }
 }

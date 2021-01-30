@@ -2,8 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\CheckinPublic;
+use App\checkOutPublic;
+use App\publicReportFeedback;
 use App\Shop\Office;
+use App\wokerReport;
+use App\workerCheckIn;
+use App\workerCheckOut;
+use App\workerLogin;
+use App\workerReportFeedback;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class WorkerController extends Controller
 {
@@ -12,7 +21,9 @@ class WorkerController extends Controller
         return view('worker.index_worker');
     }
     public function Feedback(){
-        return view('worker.Feedback');
+        $AF=workerReportFeedback::all();
+        $WF=wokerReport::all();
+        return view('worker.Feedback',compact('WF','AF'));
     }
     public function office(){
         $WorkerOffice=Office::all();
@@ -24,8 +35,35 @@ class WorkerController extends Controller
     public function Report(){
         return view('worker.Report');
     }
+    public function workerlogin(){
+        return view('worker.workerlogin');
+    }
     public function shop(){
         $WorkerShop=Office::all();
         return view('worker.shop',compact('WorkerShop'));
     }
+    public function workerCheckin(Request $request)
+    {
+        $userinfo = Auth::user();
+        $userType = $userinfo->id;
+        $userEmail = $userinfo->email;
+        $workerCheck= new workerCheckIn();
+        $workerCheck->workerCheckInID=$userType;
+        $workerCheck->workerCheckInEmail=$userEmail;
+        $workerCheck->save();
+        return redirect('/worker');
+    }
+    public function workerCheckOut(Request $request){
+        $userinfo = Auth::user();
+        $userType = $userinfo->id;
+        $userEmail = $userinfo->email;
+        $publicCheck= new workerCheckOut();
+        $publicCheck->workerCheckOutId=$userType;
+        $publicCheck->workerCheckOutEmail=$userEmail;
+        $publicCheck->save();
+        return redirect('/worker');
+    }
+
+
+
 }

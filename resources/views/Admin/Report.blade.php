@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Melody Admin</title>
+    <title>BAS Admin Report Check</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/assets/vendors/iconfonts/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="assets/assets/vendors/css/vendor.bundle.base.css">
@@ -18,6 +18,16 @@
     <link rel="stylesheet" href="assets/assets/css/style.css">
     <!-- endinject -->
     <link rel="shortcut icon" href="http://www.urbanui.com/" />
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="assets/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="assets/css/emp.main.css" rel="stylesheet" media="all">
 </head>
 <body>
 <div class="container-scroller">
@@ -77,7 +87,7 @@
                     </h3>
                 </div>
                     <div class="col-md-10">
-                        <table>
+                        <table class="table table-bordered table-responsive">
                             <thead>
                             <tr>
                                 <th>ID</th>
@@ -85,6 +95,8 @@
                                 <th class="text-left">Email</th>
                                 <th class="text-left">Report Type</th>
                                 <th class="text-left">Report Details</th>
+                                <th class="text-left">Delete</th>
+                                <th class="text-left">Edit</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -94,19 +106,27 @@
                                     <td class="text-center">{{$WR["WorkerName"]}}</td>
                                     <td class="text-center">{{$WR["WorkerEmail"]}}</td>
                                     <td class="text-center">{{$WR["WorkerReportType"]}}</td>
-                                    <td class="text-center">{{$WR["WorkerReportMsg"]}}</td>
+                                    <td class="text-center">{{$WR["WorkerReportMsg"]}}
+                                    <td><a href="{{$WR['id']}}/deleteWreport" onclick="javascript:return confirm('Are you sure you want to delete this Report?')" class="btn btn-icon btn-danger"><i
+                                                class="far fa-trash-alt"></i></a></td>
+                                    <td><button onclick="sethdnId(this)" data-id="{{ $WR['id'] }}" type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#wexampleModal">
+                                            Feedback
+                                        </button></td>
                                 </tr>
                             @endforeach
                             </tbody>
                         </table>
                     </div><br><br><br><br>
+
+
                 <div class="container-fluid">
                     <h3 class="page-title">
                         Watch Complains of Public
                     </h3>
                 </div>
                 <div class="col-md-10">
-                    <table>
+                    <table class="table table-bordered table-responsive">
                         <thead>
                         <tr>
                             <th>ID</th>
@@ -114,6 +134,8 @@
                             <th class="text-left">Email</th>
                             <th class="text-left">Report Type</th>
                             <th class="text-left">Report Details</th>
+                            <th class="text-left">Delete</th>
+                            <th class="text-left">Feedback</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -124,12 +146,19 @@
                                 <td class="text-center">{{$PR["publicEmail"]}}</td>
                                 <td class="text-center">{{$PR["publicReportType"]}}</td>
                                 <td class="text-center">{{$PR["publicReportMsg"]}}</td>
+                                <td><a href="{{$PR['id']}}/deletePreport" onclick="javascript:return confirm('Are you sure you want to delete this Report?')" class="btn btn-icon btn-danger"><i
+                                            class="far fa-trash-alt"></i></a></td>
+                                <td><button onclick="sethdnId(this)" data-id="{{ $PR['id'] }}" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                        Feedback
+                                    </button></td>
                             </tr>
                         @endforeach
                         </tbody>
                     </table>
                 </div>
         </div>
+    </div>
     </div>
             <!-- content-wrapper ends -->
             <!-- partial:partials/_footer.html -->
@@ -141,9 +170,84 @@
             <!-- partial -->
         </div>
         <!-- main-panel ends -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Public Feedback</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <form action="/GiveFeedback" method="post">
+                    @csrf
+                    <input type="hidden" value="" name="hdn_id" id="hdn_id">
+
+                    <div class="modal-body">
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="name">Feedback</label>
+                            <input type="text" name="feedBackReport" id="name" class="form-control"/>
+                        </div>
+
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </form>
+
+
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
     </div>
-    <!-- page-body-wrapper ends -->
 </div>
+
+
+
+<div class="modal fade" id="wexampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Worker Feedback</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <form action="/giveFeedback2" method="post">
+                    @csrf
+                    <input type="hidden" value="" name="hdn_id" id="hdn_id">
+
+                    <div class="modal-body">
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="name">Feedback</label>
+                            <input type="text" name="workerReportFeedback" id="name" class="form-control"/>
+                        </div>
+
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- page-body-wrapper ends -->
 <!-- container-scroller -->
 
 <!-- plugins:js -->

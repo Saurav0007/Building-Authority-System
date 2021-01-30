@@ -19,8 +19,7 @@ class CreateCreateAccountsTable extends Migration
             $table->string('Eemail');
             $table->string('Epass');
             $table->string('Eaddress');
-            $table->string('Eposition');
-            $table->string('Etime');
+            $table->string('EPhoneNo');
             $table->timestamps();
         });
     }

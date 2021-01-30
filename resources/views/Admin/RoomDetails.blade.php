@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Melody Admin</title>
+    <title>BAS Admin Room Details</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/assets/vendors/iconfonts/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="assets/assets/vendors/css/vendor.bundle.base.css">
@@ -18,6 +18,17 @@
     <link rel="stylesheet" href="assets/assets/css/style.css">
     <!-- endinject -->
     <link rel="shortcut icon" href="http://www.urbanui.com/" />
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="assets/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="assets/css/emp.main.css" rel="stylesheet" media="all">
+
 </head>
 <body>
 <div class="container-scroller">
@@ -72,9 +83,36 @@
         <div class="main-panel">
             <div class="content-wrapper">
                 <div class="page-header">
-                    <h3 class="page-title">
+                    <h2 class="page-title">
                       Check Room Details
-                    </h3>
+                        <br><br><br><br><div class="table-responsive">
+                            <table class="table table-responsive table-bordered">
+                                <thead>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Room Number</th>
+                                <th>Problem Details</th>
+                                <th>Checked</th>
+                                </thead>
+                                <tbody>
+                                @foreach($RDA as $rda)
+                                    <tr>
+                                        <td>{{$r=$r+1}}</td>
+                                        <td>{{$rda['name']}}</td>
+                                        <td>{{$rda['RoomNo']}}</td>
+                                        <td>{{$rda['RoomDetails']}}</td>
+                                        <td>{{$rda['check']}}</td>
+                                        <td><a href="{{$rda['id']}}/deleteRoomDetails" onclick="javascript:return confirm('Are you sure you want to delete this room details?')" class="btn btn-icon btn-danger"><i
+                                                    class="far fa-trash-alt"></i></a><br> <button onclick="sethdnId(this)" data-id="{{ $rda['id'] }}" type="button" class="btn btn-primary" data-toggle="modal"
+                                                                                                  data-target="#exampleModal">
+                                                Edit
+                                            </button></td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </h2>
                 </div>
             </div>
             <!-- content-wrapper ends -->
@@ -90,8 +128,53 @@
     </div>
     <!-- page-body-wrapper ends -->
 </div>
-<!-- container-scroller -->
 
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">update Room Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <form action="/editEmptyRoomDetails" method="post">
+                    @csrf
+                    <input type="hidden" value="" name="hdn_id" id="hdn_id">
+
+                    <div class="modal-body">
+                        <!-- Checkbox -->
+                        <div class="form-group col-md-6">
+                            <label class="form-check-label" for="check">
+                                Problem Fixed or Not
+                            </label>
+                            <select name="check" class="form-control">
+                                <option>Fixed</option>
+                                <option>Not Fixed</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- container-scroller -->
+<script type="text/javascript">
+    function sethdnId(element){
+        var data_id= $(element).attr("data-id");
+        $("#hdn_id").val(data_id);
+    }
+</script>
 <!-- plugins:js -->
 <script src="assets/assets/vendors/js/vendor.bundle.base.js"></script>
 <script src="assets/assets/vendors/js/vendor.bundle.addons.js"></script>

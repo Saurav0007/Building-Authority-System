@@ -15,11 +15,11 @@ class CreateOfficesTable extends Migration
     {
         Schema::create('offices', function (Blueprint $table) {
             $table->id();
-            $table->string('ShopName')->nullable();
-            $table->string('ShopType')->nullable();
-            $table->string('ShopNo')->nullable();
-            $table->string('ShopDetails')->nullable();
-            $table->string('ShopPhoto')->nullable();
+            $table->string('ShopName');
+            $table->string('ShopType');
+            $table->string('ShopNo');
+            $table->string('ShopDetails');
+            $table->string('ShopPhoto');
             $table->timestamps();
         });
     }

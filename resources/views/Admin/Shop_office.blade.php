@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Melody Admin</title>
+    <title>BAS Admin Shop/Office Details</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/assets/vendors/iconfonts/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="assets/assets/vendors/css/vendor.bundle.base.css">
@@ -18,6 +18,14 @@
     <link rel="stylesheet" href="assets/assets/css/style.css">
     <!-- endinject -->
     <link rel="shortcut icon" href="http://www.urbanui.com/" />
+
+{{--    //form links--}}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Main CSS-->
+    <link href="assets/ASO/css/main.css" rel="stylesheet" media="all">
+
+
 </head>
 <body>
 <div class="container-scroller">
@@ -69,70 +77,104 @@
     <div class="container-fluid page-body-wrapper">
     @include('admin.navbar')
     <!-- partial -->
-        <div class="main-panel">
-            <div class="content-wrapper">
-                <div class="page-header">
-                    <h3 class="page-title">
-                       Please insert new shop offices in the building
-                    </h3>
-                </div>
-                <div class="container-fluid">
+
+            <div class="wrapper wrapper--w680">
+                <div class="card card-5">
+                    <div class="header-caption pull-right">
+                        <h2 class="header">Insert New Shop or Office Details</h2>
+                    </div>
+
+                    <div class="card-body">
                     <form action="/SubmitShopOfficeAdmin" method="post" enctype="multipart/form-data">
                         @csrf
-                        <div class="form-group col-md-10">
-                            <input type="text" class="form-control" name="ShopName" placeholder="Shop Name">
+                        <div class="form-row">
+                            <div class="name">Name</div>
+                            <div class="value">
+                                <input class="input--style-6" type="text" name="ShopName">
+                            </div>
                         </div>
-
-                        <div class="form-group col-md-10">
-                        <label for="exampleFormControlSelect1"> Please Select one</label>
-                        <select name="SOType" id="SOType" class="form-control">
-                        <option>Shop</option>
-                        <option>Office</option>
-                        </select>
+                        <div class="form-row">
+                            <div class="name">Please Select one</div>
+                            <div class="value">
+                                <div class="input-group col-md-6">
+                                    <div class="rs-select2 js-select-simple select--no-search col-md-6">
+                                        <select name="SOType" >
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>Shop</option>
+                                            <option>Office</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="form-group col-md-10">
-                            <input type="number" class="form-control" name="ShopNo" placeholder="Shop Number">
+                        <div class="form-row">
+                            <div class="name">Number</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-6" type="number" name="ShopNo" placeholder="Number">
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group col-md-10">
-                            <input type="text" class="form-control" name="ShopDetails" placeholder="Details">
+                        <div class="form-row">
+                            <div class="name">Details</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-6" type="text" name="ShopDetails" placeholder="Details">
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group col-md-10">
-                            <input type="file" class="form-control" name="ShopPhoto" placeholder="Photo">
+                        <div class="form-row">
+                            <div class="name">Picture</div>
+                            <div class="value">
+                                    <input type="file" name="ShopPhoto" placeholder="Select a photo">
+                                <div class="label--desc">Upload Picture of the selected Shop/Office or any other relevant file. Max file size 50 MB</div>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-success">Submit</button>
+                        <div class="card-body">
+                            <button class="btn btn--radius-2 btn--blue-2" type="submit">Submit</button>
+                        </div>
                     </form>
-                </div><br>
-                <div class="page-title-icon" style="color: #16a085;" >
-                    <h3 class="page-title" >
+                </div>
+                </div>
+                </div>
+        <br>
+
+    <div class="card-body" style="color: #16a085;" >
+                    <h2 class="page-title" >
                         Inserted Shops or Offices
-                    </h3>
-                    <div class="col-md-10">
-                    <table>
+                    </h2>
+                    <table class="table table-responsive table-bordered">
                         <thead>
                         <tr>
                             <th class="text-left">Name</th>
                             <th class="text-left">Type</th>
-                            <th class="text-left">Number</th>
+                            <th class="text-left">Shop Number</th>
                             <th class="text-left">Details</th>
                             <th class="text-left">Photo</th>
+                            <th class="text-left">Action</th>
                         </tr>
                         </thead>
                         <tbody>
                         @foreach($SO as $s)
                         <tr>
-                            <th class="text-center">{{$s['ShopName']}}</th>
-                            <th class="text-center">{{$s['ShopType']}}</th>
-                            <th class="text-center">{{$s['ShopNo']}}</th>
-                            <th class="text-center">{{$s['ShopDetails']}}</th>
-                            <th><img src="Uploads/SOpicture/{{$s['ShopPhoto']}}" width="100" height="100" alt="No Image Given"> </th>
+                            <td class="text-center">{{$s['ShopName']}}</td>
+                            <td class="text-center">{{$s['ShopType']}}</td>
+                            <td class="text-center">{{$s['ShopNo']}}</td>
+                            <td class="text-center">{{$s['ShopDetails']}}</td>
+                            <td><img src="Uploads/SOpicture/{{$s['ShopPhoto']}}" width="100" height="100" alt="No Image Given"> </td>
+                            <td><a href="{{$s['id']}}/deleteSOdetails" onclick="javascript:return confirm('Are you sure you want to delete this details?')" class="btn btn-icon btn-danger"><i
+                                        class="far fa-trash-alt"></i></a><br><button onclick="sethdnId(this)" data-id="{{ $s['id'] }}" type="button" class="btn btn-primary" data-toggle="modal"
+                                                                                     data-target="#exampleModal">
+                                    Edit
+                                </button></td>
+
                         </tr>
                         @endforeach
                         </tbody>
                     </table>
-                    </div>
                 </div>
-            </div>
+    </div>
 
             <!-- content-wrapper ends -->
             <!-- partial:partials/_footer.html -->
@@ -142,13 +184,75 @@
                 </div>
             </footer>
             <!-- partial -->
-        </div>
         <!-- main-panel ends -->
-    </div>
     <!-- page-body-wrapper ends -->
 </div>
-<!-- container-scroller -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
 
+                <form action="/editShopDetails" method="post">
+                    @csrf
+                    <input type="hidden" value="" name="hdn_id" id="hdn_id">
+                        <div class="form-row">
+                            <div class="name">Name</div>
+                            <div class="value">
+                                <input class="input--style-6" type="text" name="ShopName">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">Select a Type</div>
+                                <select name="SOType" >
+                                    <option disabled="disabled" selected="selected">Choose type</option>
+                                    <option>Shop</option>
+                                    <option>Office</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                    </div>
+                        <div class="form-row">
+                            <div class="name">Number</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-6" type="number" name="ShopNo" placeholder="Number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Details</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-6" type="text" name="ShopDetails" placeholder="Details">
+                                </div>
+                            </div>
+                        </div>
+
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- container-scroller -->
+<script type="text/javascript">
+    function sethdnId(element){
+        var data_id= $(element).attr("data-id");
+        $("#hdn_id").val(data_id);
+    }
+</script>
 <!-- plugins:js -->
 <script src="assets/assets/vendors/js/vendor.bundle.base.js"></script>
 <script src="assets/assets/vendors/js/vendor.bundle.addons.js"></script>
@@ -164,6 +268,15 @@
 <!-- endinject -->
 <!-- Custom js for this page-->
 <script src="assets/assets/js/dashboard.js"></script>
+
+{{--//custom form--}}
+<script src="assets/ASO/vendor/jquery/jquery.min.js"></script>
+
+
+<!-- Main JS-->
+<script src="assets/ASO/js/global.js"></script>
+
+
 <!-- End custom js for this page-->
 </body>
 

@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Melody Admin</title>
+    <title>BAS Admin Create Account</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/assets/vendors/iconfonts/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="assets/assets/vendors/css/vendor.bundle.base.css">
@@ -18,6 +18,17 @@
     <link rel="stylesheet" href="assets/assets/css/style.css">
     <!-- endinject -->
     <link rel="shortcut icon" href="http://www.urbanui.com/" />
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="assets/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="assets/css/emp.main.css" rel="stylesheet" media="all">
 </head>
 <body>
 <div class="container-scroller">
@@ -77,28 +88,72 @@
                     </h3>
                 </div>
                 <div class="container-fluid">
-                        <form action="/SubmitAccountAdmin" method="post">
-                            @csrf
-                            <div class="form-group col-md-10">
-                                <input type="text" class="form-control" name="EmpName" placeholder="Name">
+                                <div class="wrapper wrapper--w790">
+                                    <div class="card card-5">
+                                        <div class="card-heading">
+                                            <h2 class="title">Employee Registration Form</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <form action="/SubmitAccountAdmin" method="POST">
+                                                @csrf
+                                                <div class="form-row m-b-55">
+                                                    <div class="name">Name</div>
+                                                    <div class="value">
+                                                        <div class="row row-space">
+                                                            <div class="col-md-12">
+                                                                <div class="input-group-desc">
+                                                                    <input class="input--style-5" type="text" name="EmpName">
+                                                                    <label class="label--desc">Full Name</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="name">Email</div>
+                                                    <div class="value">
+                                                        <div class="input-group-desc">
+                                                            <input class="input--style-5" type="email" name="EmpEmail">
+                                                            <label class="label--desc">Email</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="name">Password</div>
+                                                    <div class="value">
+                                                        <div class="input-group-desc">
+                                                            <input class="input--style-5" type="password" name="EmpPass">
+                                                            <label class="label--desc">Password</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row m-b-55">
+                                                    <div class="name">Details</div>
+                                                    <div class="value">
+                                                        <div class="row row-refine">
+                                                            <div class="col-6">
+                                                                <div class="input-group-desc">
+                                                                    <input class="input--style-5" type="text" name="EmpAddress">
+                                                                    <label class="label--desc">Address</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="input-group-desc">
+                                                                    <input class="input--style-5" type="text" name="EmpPhone">
+                                                                    <label class="label--desc">Phone Number</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <button class="btn btn--radius-2 btn--red" type="submit">Register</button>
+                                                </div>
+                                            </form>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group col-md-10">
-                                <input type="email" class="form-control" name="EmpEmail" placeholder="Email">
-                            </div>
-                            <div class="form-group col-md-10">
-                                <input type="password" class="form-control" name="EmpPass" placeholder="Password">
-                            </div>
-                            <div class="form-group col-md-10">
-                                <input type="text" class="form-control" name="EmpAddress" placeholder="Address">
-                            </div>
-                            <div class="form-group col-md-10">
-                                <input type="text" class="form-control" name="EmpPosition" placeholder="Position">
-                            </div>
-                            <div class="form-group col-md-10">
-                                <input type="text" class="form-control" name="EmpTime" placeholder="Working Hour">
-                            </div>
-                            <button type="submit" class="btn btn-success">Submit</button>
-                        </form>
                     </div>
             </div>
             <!-- content-wrapper ends -->
@@ -131,6 +186,16 @@
 <!-- endinject -->
 <!-- Custom js for this page-->
 <script src="assets/assets/js/dashboard.js"></script>
+
+
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<!-- Vendor JS-->
+<script src="assets/vendor/select2/select2.min.js"></script>
+<script src="assets/vendor/datepicker/moment.min.js"></script>
+<script src="assets/vendor/datepicker/daterangepicker.js"></script>
+
+<!-- Main JS-->
+<script src="assets/js/emp.global.js"></script>
 <!-- End custom js for this page-->
 </body>
 
