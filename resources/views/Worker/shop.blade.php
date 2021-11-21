@@ -57,7 +57,6 @@
                 <div class="row">
                     <div class="col-sm-3">
                         <div class="site-branding">
-                            <h1 class="site-title title-image"><a href="worker" rel="home"><img src="../assets/img/img-logo.png" alt="construction business" class="img-responsive"></a></h1>
                         </div><!-- .site-branding -->
                     </div><!-- .col-sm-3 -->
 
@@ -116,7 +115,11 @@
                                 <th>{{$Wshop['ShopDetails']}}</th>
                                 <th>{{$Wshop['ShopNo']}}</th>
                                 <th><img src="Uploads/SOpicture/{{$Wshop['ShopPhoto']}}" width="100" height="100" alt="No Image Given"></th>
-                                <th><a href="/selectOffice" class="btn btn-default">Select</a></th>
+                                <th>
+                                    <form action="/selectOffice" method="post">
+                                        @csrf
+                                        <button type="submit" name="publicCheckIn" class="btn btn-default btn-bordered  btn-md" href="#">Select</button>
+                                    </form></th>
                             </tr>
 
                         @endforeach

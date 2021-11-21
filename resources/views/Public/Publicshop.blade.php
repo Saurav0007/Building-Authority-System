@@ -57,7 +57,7 @@
                 <div class="row">
                     <div class="col-sm-3">
                         <div class="site-branding">
-                            <h1 class="site-title title-image"><a href="index.html" rel="home"><img src="assets/img/img-logo.png" alt="construction business" class="img-responsive"></a></h1>
+
                         </div><!-- .site-branding -->
                     </div><!-- .col-sm-3 -->
 
@@ -100,32 +100,47 @@
     </div><!-- .site-header-affix-wrapper -->
     <!-- end:site-navigation -->
 
+
+
+
+
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
-                <div class="col-md-5">
-                    <div class="header-caption">
-                        <h1 class="caption-title">Select Office</h1>
-                        <h2 class="caption-subtitle">Select your office where you work.</h2>
-                        <p>Make sure you select right one. Don't make any mistake</p>
-                        <h2 class="header">Shops in the buildings</h2>
-                        @foreach($publicShop as $Pshop)
-                            <div class="container-fluid">
-                                <p style="color: #0000cc;">{{$Pshop['ShopName']}}</p>
-                                <p style="color: #0000cc;">{{$Pshop['ShopDetails']}}</p>
-                                <p style="color: #0000cc;">{{$Pshop['ShopNo']}}</p>
-                                <p style="color: #0000cc;"><img src="Uploads/SOpicture/{{$Pshop['ShopPhoto']}}" width="300" height="300" alt="No Image Given"></p>
-                            </div>
-                        @endforeach
-                    </div><!-- .header-caption -->
-                </div><!-- .col-sm-5 -->
+            <div class="col-sm-10">
+                <div class="header-caption">
+                    <h2 class="Header-caption">All details of our shop/offices</h2>
+                    <div class="status alert alert-success" style="display: none"></div>
+                    <form action="#" class="row" >
 
+                        <table class="table table-bordered table-responsive-xl">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Shop/office Number</th>
+                                <th>Details</th>
+                                <th>Picture</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($publicShop as $Pshop)
+                                <tr>
+                                    <td>{{$Pshop['ShopName']}}</td>
+                                    <td>{{$Pshop['ShopType']}}</td>
+                                    <td>{{$Pshop['ShopNo']}}</td>
+                                    <td>{{$Pshop['ShopDetails']}}</td>
+                                    <td><img src="Uploads/SOpicture/{{$Pshop['ShopPhoto']}}" width="100" height="100" alt="No Image Given"> </td>
+
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
             </div>
-        </div><!-- .row -->
-    </div><!-- .container -->
-</div><!-- #header -->
-<!-- end:header -->
-
+        </div>
+    </div>
+</div>
 
     <div class="container">
         @include('footer');

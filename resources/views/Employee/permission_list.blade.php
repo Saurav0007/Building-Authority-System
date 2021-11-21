@@ -59,7 +59,7 @@
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="site-branding">
-                                <h1 class="site-title title-image"><a href="employee" rel="home"><img src="../assets/img/img-logo.png" alt="construction business" class="img-responsive"></a></h1>
+
                             </div><!-- .site-branding -->
                         </div><!-- .col-sm-3 -->
 
@@ -130,9 +130,9 @@
                             <td>{{$vis['visitEmail']}}</td>
                             <td>{{$vis['visitNumber']}}</td>
                             <td>{{$vis['visitReason']}}</td>
-{{--                            @foreach($per as $per)--}}
-{{--                                <td>{{$per['permissionCheck']}}</td>--}}
-{{--                            @endforeach--}}
+                            @foreach($per as $pe)
+                                <td>{{$pe['permissionCheck']}}</td>
+                            @endforeach
                         </tr>
                     @endforeach
                     </tbody>

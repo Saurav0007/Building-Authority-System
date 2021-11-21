@@ -57,6 +57,7 @@ Route::post('/WorkerSubmitReport',"WokerReportController@WorkerReport");
 Route::post('/WorkerLogSubmit',"WorkerController@WorkerLogFunction");
 Route::post('workerCheckIn',"WorkerController@workerCheckin");
 Route::post('workerCheckOut',"WorkerController@workerCheckOut");
+Route::post('/selectOffice',"WorkerController@workerDestination");
 
 // public
 Route::get('PublicPresence',"PublicHomeController@Public_presence");

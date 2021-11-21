@@ -57,7 +57,7 @@
                 <div class="row">
                     <div class="col-sm-3">
                         <div class="site-branding">
-                            <h1 class="site-title title-image"><a href="index.html" rel="home"><img src="assets/img/img-logo.png" alt="construction business" class="img-responsive"></a></h1>
+
                         </div><!-- .site-branding -->
                     </div><!-- .col-sm-3 -->
 
@@ -120,9 +120,9 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="exampleInputMobile" class="col-sm-3 col-form-label">Shop Number</label>
+                                <label for="exampleInputMobile" class="col-sm-3 col-form-label">Shop/Office Number</label>
                                 <div class="col-sm-9">
-                                    <input type="number" name="visitNumber" class="form-control" id="exampleInputMobile" placeholder="Shop number">
+                                    <input type="number" name="visitNumber" class="form-control" id="exampleInputMobile" placeholder="Shop/Office Number">
                                 </div>
                             </div>
                             <div class="form-group row">

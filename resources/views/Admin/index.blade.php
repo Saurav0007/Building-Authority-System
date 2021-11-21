@@ -24,7 +24,7 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row default-layout-navbar">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo" href="admin"><img src="assets/assets/images/logo.svg" alt="logo"/></a>
+
         <a class="navbar-brand brand-logo-mini" href="admin"><img src="assets/assets/images/logo-mini.svg" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-stretch">
@@ -74,6 +74,13 @@
           <div class="page-header">
             <h3 class="page-title">
               Dashboard
+                <table>
+
+                    @foreach($name as $name)
+                       <td>Name:{{$name['email']}}</td>
+                    @endforeach
+                </table>
+
             </h3>
           </div>
         </div>

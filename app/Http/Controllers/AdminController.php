@@ -26,7 +26,9 @@ class AdminController extends Controller
 {
     //
     public function admin(){
-        return view('Admin.index');
+        $name=User::all();
+
+        return view('Admin.index',compact('name'));
     }
     public function Details(){
         $p=0;
@@ -168,5 +170,6 @@ public function DeleteAcc($id){
         $SO->save();
         return redirect('/Shop_office');
     }
+
 
 }

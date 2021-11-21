@@ -7,6 +7,7 @@ use App\checkOutPublic;
 use App\publicReportFeedback;
 use App\Shop\Office;
 use App\wokerReport;
+use App\workeDestination;
 use App\workerCheckIn;
 use App\workerCheckOut;
 use App\workerLogin;
@@ -62,6 +63,16 @@ class WorkerController extends Controller
         $publicCheck->workerCheckOutEmail=$userEmail;
         $publicCheck->save();
         return redirect('/worker');
+    }
+    public function workerDestination(){
+        $userinfo = Auth::user();
+        $userType = $userinfo->id;
+        $userEmail = $userinfo->email;
+        $workerDestination= new workeDestination();
+        $workerDestination->workerId=$userType;
+        $workerDestination->workerEmail=$userEmail;
+        $workerDestination->save();
+        return redirect('/Workershop');
     }
 
 

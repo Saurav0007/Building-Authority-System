@@ -5,95 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b89f56a-b9e3-4a38-8fba-7e51155ddef4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/CheckinPublic.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckinPublicController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/adminReportFeedback.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/checkOutPublic.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/publiclogin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/workerLogin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_28_201232_create_checkin_publics_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_28_205603_create_check_out_publics_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_28_210951_create_admin_report_feedback_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Uploads/SOpicture/1609433233.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Uploads/SOpicture/1609433255.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Uploads/SOpicture/1609784406.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Uploads/SOpicture/1609784452.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Uploads/SOpicture/1611249535.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Uploads/SOpicture/1611249826.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Uploads/SOpicture/1611254675.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Uploads/SOpicture/1611781342.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Uploads/SOpicture/1611833276.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Uploads/SOpicture/1611833299.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Uploads/SOpicture/1611833318.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Uploads/SOpicture/544750.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/ASO/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/ASO/js/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/ASO/vendor/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/ASO/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/assets/images/faces/face24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/emp.main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/emp.main.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/emp.global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/datepicker/daterangepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/datepicker/daterangepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/datepicker/moment.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/font-awesome-4.7/HELP-US-OUT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/font-awesome-4.7/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/font-awesome-4.7/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/font-awesome-4.7/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/font-awesome-4.7/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/font-awesome-4.7/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/font-awesome-4.7/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/mdi-font/css/material-design-iconic-font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/mdi-font/css/material-design-iconic-font.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/mdi-font/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/mdi-font/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/mdi-font/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/select2/select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/select2/select2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/AccountDetails.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Checked_In.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Checked_Out.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/adminlogin.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PublicHomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PublicHomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WokerReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WokerReportController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WorkerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WorkerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_134703_create_create_accounts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_21_134703_create_create_accounts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_25_182315_create_offices_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_25_182315_create_offices_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_29_161055_create_worker_registratins_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_161055_create_worker_registratins_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Admin/Account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Account.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/AccountDetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/AccountDetails.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Checked_In.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Checked_In.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Checked_Out.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Checked_Out.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Admin/Details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Details.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Admin/Report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Report.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Admin/RoomDetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/RoomDetails.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Admin/Shop_office.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Shop_office.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Employee/EmptyRoomDetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Employee/EmptyRoomDetails.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Employee/RoomDetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Employee/RoomDetails.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Employee/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Employee/index.blade.php" afterDir="false" />
@@ -105,7 +28,6 @@
       <change beforePath="$PROJECT_DIR$/resources/views/Employee/worker_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Employee/worker_details.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Employee/worker_regi.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Employee/worker_regi.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Public/PublicFeedback.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Public/PublicFeedback.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Public/PublicPresence.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Public/PublicReport.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Public/PublicReport.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Public/Publicoffice.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Public/Publicoffice.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Public/Publicshop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Public/Publicshop.blade.php" afterDir="false" />
@@ -113,7 +35,6 @@
       <change beforePath="$PROJECT_DIR$/resources/views/Public/index_public.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Public/index_public.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Public/takepermission.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Public/takepermission.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Worker/Feedback.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Worker/Feedback.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Worker/Presence.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Worker/Report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Worker/Report.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Worker/index_worker.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Worker/index_worker.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Worker/office.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Worker/office.blade.php" afterDir="false" />
@@ -266,7 +187,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../new_gsm_lab/gsm_lab" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -312,6 +233,16 @@
       <workItem from="1611853127161" duration="13179000" />
       <workItem from="1611914457782" duration="19165000" />
       <workItem from="1611939222080" duration="6810000" />
+      <workItem from="1611984431791" duration="5846000" />
+      <workItem from="1613636657948" duration="321000" />
+      <workItem from="1613737832770" duration="530000" />
+      <workItem from="1613823640920" duration="578000" />
+      <workItem from="1613847818356" duration="20000" />
+      <workItem from="1614083042347" duration="1002000" />
+      <workItem from="1617295202628" duration="636000" />
+      <workItem from="1617888451640" duration="1567000" />
+      <workItem from="1617903247439" duration="1489000" />
+      <workItem from="1617993524767" duration="800000" />
     </task>
     <servers />
   </component>
